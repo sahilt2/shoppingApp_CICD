@@ -17,6 +17,11 @@ jobs:
 
       - name: Run a one-line script
         run: echo "Hello, CI/CD!"
+      
+      # install applicaion dependencies
+      - name: Install dependencies
+        run: |
+          npm install
 
       #- name: Simulate an error
       #  run: echo "About to fail" ; exit 1
